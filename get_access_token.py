@@ -65,6 +65,9 @@ def get_access_token(consumer_key, consumer_secret):
             cs=consumer_secret,
             atk=resp.get('oauth_token'),
             ats=resp.get('oauth_token_secret')))
+    
+    return (atk,ats)
+    
 
 
 def main():
